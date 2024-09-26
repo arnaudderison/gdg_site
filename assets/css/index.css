@@ -1,0 +1,16 @@
+@import url('style.css');
+
+header {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/back.webp");
+  background-size: cover;
+  background-position: center;
+  width: 99vw;
+  height: 100vh;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 5vw;
+}
