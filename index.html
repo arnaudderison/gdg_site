@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="FR_fr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/index.css">
+  <script defer src="./assets/js/timer.js"></script>
+  <script defer src="./assets/js/resize.js"></script>
   <title>Devfest Mons</title>
 </head>
 
@@ -15,17 +17,34 @@
         <h1>Devfest Mons 2024</h1>
       </div>
 
-      <ul class="menu">
-        <li href="#">Home</li>
-        <li href="#">Agenda</li>
-        <li href="#">Speakers</li>
-        <li href="#">Partners</li>
-        <li href="#">Team</li>
-        <li href="#">Blog</li>
-        <li href="#">Contact us</li>
-        <li href="#">Get a ticket</li>
+      <ul class="menu" id="menu">
+        <li><a href="#" class="underline">Home</a></li>
+        <li><a href="#">Agenda</a></li>
+        <li><a href="#">Speakers</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li class="highlight">Get a ticket</li>
       </ul>
+
+      <section class="burger-image" id="burger">
+        <img src="./assets/images/list.svg" alt="open menu" class="none" id="list">
+        <img src="./assets/images/x-lg.svg" alt="open menu" class="none" id="close">
+      </section>
     </nav>
+
+    <section class="timer" id="timer">
+      0d 0h 0m 0s
+    </section>
+
+    <section class="hero">
+      <h1 class="title">Thursday, November 12th 2024</h1>
+
+      <div class="button">
+        <button>Get a ticket</button>
+      </div>
+    </section>
   </header>
 
   <section class="banner">
@@ -33,27 +52,56 @@
   </section>
 
   <section class="video-section">
-    <!-- il y aura la video en integration -->
+    <iframe src="https://www.youtube.com/embed/Gou_5qTPzwI?si=Csk7lkMf7LF5tg1n" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </section>
 
   <footer>
-    <div class="old-year">
-      <ul>
-        <li href="#">Devfes 2021</li>
-        <li href="#">Devfes 2022</li>
-        <li href="#">Devfes 2023</li>
-      </ul>
-    </div>
-
-    <div class="social">
-      <li>Facebook</li>
-      <li>Instagram</li>
-      <li>Linkedin</li>
-      <li>Twitter</li>
-      <li>Youtube</li>
-      <li>Meetup</li>
-    </div>
+    <ul class="old-year">
+      <li><a href="https://www.youtube.com/watch?v=c-ORpm9Z7Fc&list=PLsHWHAz6UbRw1uwvoAobhduh9EPDSN6cL">Devfest 2021</a>
+      </li>
+      <li><a href="https://www.youtube.com/watch?v=XgpZ-U5lHy4&list=PLsHWHAz6UbRys6TTwTmLqwS7HFmjmjxep">Devfest 2022</a>
+      </li>
+      <li><a href="https://www.youtube.com/watch?v=zPV-ZoZONhc&list=PLsHWHAz6UbRz1UXElClbVPLLYmor8I0HK">Devfest 2023</a>
+      </li>
+    </ul>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/GDGMons/">Facebook</a></li>
+      <li><a href="https://www.instagram.com/gdgmons/">Instagram</a></li>
+      <li><a href="https://be.linkedin.com/company/gdg-mons">Linkedin</a></li>
+      <li><a href="https://twitter.com/GDG_Mons">Twitter</a></li>
+      <li><a href="https://www.youtube.com/@gdg-mons">Youtube</a></li>
+      <li><a href="https://www.meetup.com/mons-community-building-meetup-group/">Meetup</a></li>
+    </ul>
   </footer>
 </body>
 
 </html>
+<!-- 
+
+         /|
+      /\/ |/\
+      \  ^   | /\  /\
+(\/\  / ^   /\/  )/^ )
+\  \/^ /\       ^  /
+  )^       ^ \     (
+(   ^   ^      ^\  )
+ \___\/____/______/
+ [________________]
+  |              |
+  |     //\\     |
+  |    <<()>>    |
+  |     \\//     |
+   \____________/
+       |    |
+       |    |
+       |    |
+       |    |
+       |    |
+       |    |
+       |    | 
+      
+Minishtre LaTorche.
+  -->
