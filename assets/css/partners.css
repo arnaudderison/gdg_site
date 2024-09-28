@@ -1,0 +1,49 @@
+@import url('style.css');
+
+body {
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  margin: 5vh 0;
+}
+
+a {
+  color: #000;
+}
+
+.logo-grid {
+  margin: 10vh 0;
+}
+
+.logo-grid ul {
+  display: grid;
+  list-style: none;
+  grid-gap: 100px 100px;
+  margin: 0 7vw;
+}
+
+@media screen and (min-width: 576px) {
+  .logo-grid ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo-grid ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .logo-grid ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.logo-grid img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
