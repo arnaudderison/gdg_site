@@ -22,6 +22,16 @@ a {
   list-style: none;
   grid-gap: 100px 100px;
   margin: 0 7vw;
+  justify-content: center;
+}
+
+.name {
+  font-size: 1.4rem;
+}
+
+.logo-grid ul li {
+  text-align: center;
+  width: 250px;
 }
 
 @media screen and (min-width: 576px) {
@@ -42,8 +52,13 @@ a {
   }
 }
 
+.logo-grid p {
+  margin-top: 15px;
+}
+
 .logo-grid img {
-  max-width: 100%;
-  height: auto;
+  width: 250px;
+  height: 250px;
   display: block;
+  border-radius: 50%;
 }
