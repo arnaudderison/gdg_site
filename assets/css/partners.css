@@ -47,3 +47,7 @@ a {
   height: auto;
   display: block;
 }
+
+.underline {
+  border-bottom: 1px solid black;
+}

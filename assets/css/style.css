@@ -60,6 +60,10 @@ nav .phone {
   height: 100vh;
 }
 
+nav img {
+  cursor: pointer;
+}
+
 nav .phone li {
   margin: 15px;
 }
